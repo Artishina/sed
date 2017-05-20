@@ -8,7 +8,9 @@
   <header class="main-header">
     <div class="container">
       <div class="main-header-logo">
-        <img src="" alt="Sedona"> 
+        <a class="main-header-logo-link" href="index.html">
+          <h1><img src="" alt="Sedona"></h1>
+        </a>
       </div>
       <ul compact="main-header-navigation">
         <li><a href="#">Информация</a></li>
@@ -21,15 +23,102 @@
   <main class="main catalog">
     <form class="filter-block">
       <fieldset class="filter-column-1">
-        <legend>Инфраструктура:</legend>  
+        <legend>Инфраструктура:</legend>
+        <input id="checkbox1" type="checkbox" name="pool" checked> 
+        <label for="checkbox1">Бассейн</label>
+        <input id="checkbox2" type="checkbox" name="park"> 
+        <label for="checkbox2">Парковка</label>
+        <input id="checkbox3" type="checkbox" name="wifi"> 
+        <label for="checkbox3">Wi-fi</label> 
       </fieldset>
       <fieldset class="filter-column-2">
-        <legend>Тип жилья:</legend>   
+        <legend>Тип жилья:</legend>
+        <input id="checkbox4" type="checkbox" name="hotel" checked> 
+        <label for="checkbox4">Гостиница</label>
+        <input id="checkbox5" type="checkbox" name="motel" checked> 
+        <label for="checkbox5">Мотель</label>
+        <input id="checkbox6" type="checkbox" name="flat" checked> 
+        <label for="checkbox6">Апартаменты</label>    
       </fieldset>
       <fieldset class="filter-column-3">
-        <legend>Стоимость в сутки(р):</legend>   
+        <legend>Стоимость в сутки(р):</legend>
+        <div class="price-controls">
+          <label class="min-price">от<input name="min-price" type="text" value="0"></label>
+          <label class="max-price">до<input name="max-price" type="text" value="3 000"></label>
+        </div>
+        <div class="range-controls">
+          <div class="bar">
+            <div class="scale"></div>  
+          </div>
+          <div class="toggle toggle-min"></div>
+          <div class="toggle toggle-max"></div>  
+        </div>   
       </fieldset>
     </form>
+    <div class="catalog-sort-column">
+      <div class="catalog-sort-column-left">
+        <p>Найдено: 3</p>
+        <ul>
+          <li>Сортировка:</li>
+          <li><a class="active">По цене</a></li> 
+          <li><a class="inactive" href="#">По типу</a></li> 
+          <li><a class="inactive" href="#">По рейтингу</a></li>  
+        </ul>  
+      </div>
+      <div class="catalog-sort-column-right">
+        <ul>
+          <li><a class="inactive">По возрастанию</a></li>
+          <li><a class="active" href="#">По убыванию</a></li>
+        </ul>  
+      </div>
+    </div>
+    <section class="catalog-block">
+      <article class="catalog-block-item">
+        <div class="catalog-block-item-left">
+          <div class="catalog-img"><img src="" alt="img"></div>
+          <div class="catalog-text">
+            <h2>Amara resort &amp; spa</h2>
+            <p>Гостиница</p>
+            <p>От 4000 р.</p>
+            <a href="#">Подробнее</a>
+            <a href="#">Забронировать</a>
+          </div>
+        </div>
+        <div class="catalog-block-item-right">
+          <p>Рейтинг: 8,5</p>  
+        </div>
+      </article>
+      <article class="catalog-block-item">
+        <div class="catalog-block-item-left">
+          <div class="catalog-img"><img src="" alt="img"></div>
+          <div class="catalog-text">
+            <h2>Desert quail inn</h2>
+            <p>Мотель</p>
+            <p>От 3000 р.</p>
+            <a href="#">Подробнее</a>
+            <a href="#">Забронировать</a>
+          </div>
+        </div>
+        <div class="catalog-block-item-right">
+          <p>Рейтинг: 8,9</p>  
+        </div>
+      </article>
+      <article class="catalog-block-item">
+        <div class="catalog-block-item-left">
+          <div class="catalog-img"><img src="" alt="img"></div>
+          <div class="catalog-text">
+            <h2>Villas at poco diablo</h2>
+            <p>Апартаменты</p>
+            <p>От 2000 р.</p>
+            <a href="#">Подробнее</a>
+            <a href="#">Забронировать</a>
+          </div>
+        </div>
+        <div class="catalog-block-item-right">
+          <p>Рейтинг: 9,2</p>  
+        </div>
+      </article>  
+    </section>
   </main>
   <footer class="main-footer catalog">
     <div class="container">
