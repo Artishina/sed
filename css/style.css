@@ -1,0 +1,162 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-calendar {
+    width: 21px;
+    height: 22px;
+    background-position: -10px -10px;
+}
+
+.sprite-calendar-active {
+    width: 21px;
+    height: 22px;
+    background-position: -10px -52px;
+}
+
+.sprite-ch {
+    width: 26px;
+    height: 22px;
+    background-position: -10px -94px;
+}
+
+.sprite-ch2 {
+    width: 22px;
+    height: 22px;
+    background-position: -10px -136px;
+}
+
+.sprite-checkbox-off {
+    width: 22px;
+    height: 22px;
+    background-position: -10px -178px;
+}
+
+.sprite-checkbox-on {
+    width: 26px;
+    height: 22px;
+    background-position: -10px -220px;
+}
+
+.sprite-fb {
+    width: 10px;
+    height: 19px;
+    background-position: -10px -262px;
+}
+
+.sprite-food {
+    width: 74px;
+    height: 70px;
+    background-position: -10px -301px;
+}
+
+.sprite-gift {
+    width: 64px;
+    height: 76px;
+    background-position: -10px -391px;
+}
+
+.sprite-house {
+    width: 75px;
+    height: 72px;
+    background-position: -10px -487px;
+}
+
+.sprite-htmlacad {
+    width: 113px;
+    height: 39px;
+    background-position: -10px -579px;
+}
+
+.sprite-htmlacad-active {
+    width: 113px;
+    height: 39px;
+    background-position: -10px -638px;
+}
+
+.sprite-minus-active {
+    width: 12px;
+    height: 3px;
+    background-position: -10px -697px;
+}
+
+.sprite-minus-hover {
+    width: 12px;
+    height: 3px;
+    background-position: -10px -720px;
+}
+
+.sprite-plus {
+    width: 11px;
+    height: 11px;
+    background-position: -10px -743px;
+}
+
+.sprite-plus-active {
+    width: 11px;
+    height: 11px;
+    background-position: -10px -774px;
+}
+
+.sprite-stars-2 {
+    width: 42px;
+    height: 17px;
+    background-position: -10px -805px;
+}
+
+.sprite-stars-3 {
+    width: 65px;
+    height: 17px;
+    background-position: -10px -842px;
+}
+
+.sprite-stars-4 {
+    width: 89px;
+    height: 17px;
+    background-position: -10px -879px;
+}
+
+.sprite-tw {
+    width: 17px;
+    height: 15px;
+    background-position: -10px -916px;
+}
+
+.sprite-yt {
+    width: 20px;
+    height: 16px;
+    background-position: -10px -951px;
+}
