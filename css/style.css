@@ -32,36 +32,48 @@ body {
   position: absolute;
   margin: 0;
   padding: 0;
+
+  z-index: 10;
 }
 
 .main-header-navigation {
+  position: absolute;
+  width: 1200px;
   margin: 0;
   padding: 0;
-
+  
+  background-color: #ffffff;
   list-style: none;
 }
 
-.main-header-navigation li {
+.main-header-navigation li,
+.main-header-navigation-cat li {
   display: inline-block;
   width: 128px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 14px;
+  padding-bottom: 16px;
 
   white-space: nowrap;
 }
 
-.main-header-navigation a {
+.main-header-navigation a,
+.main-header-navigation-cat a {
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
-  text-transform: uppercase;
   color: #333333;
   text-transform: uppercase;
   text-decoration: none;
 }
 
-
+.main-header-navigation-cat {
+  margin: 0;
+  padding: 0;
+  
+  background-color: #ffffff;
+  list-style: none;
+}
 
 .text-block-title,
 .text-block-info,
@@ -73,22 +85,86 @@ body {
   text-align: center;
 }
 
+.text {
+  position: absolute;
+  width: 1200px;
+  max-height: 111px;
+  padding-bottom: 100px;
+
+  bottom: 175px;
+
+  background-color: #ffffff;
+  z-index: 20;
+}
+
+.text::before {
+  position: absolute;
+  width: 1200px;
+  height: 57px;
+
+  content: "";
+  bottom: 211px;
+  left: 0px;
+
+  background:  url("../img/shape-white.png") no-repeat;
+}
+
 .text-block-title {
   width: 445px;
+  margin-left: 377px;
+  padding-top: 60px;
+  padding-bottom: 27px;
 
   font-size: 21px;
   font-weight: 700;
+
+  background-color: #ffffff;
 }
 
 .text-block-info {
   width: 500px;
+  margin-left: 348px;
 
   font-size: 14px;
   font-weight: 400;
+
+  background-color: #ffffff;
 }
 
 .info-block {
+    display: flex;
+}
+
+.block-1,
+.block-2 {
   display: flex;
+  max-height: 256px;
+
+  background-color: #81b3d2;
+}
+
+.block2 {
+    display: flex;
+}
+
+.info-block-inside {
+  max-height: 256px;  
+
+  background-color: #81b3d2;
+}
+
+.info-block-inside p:first-child {
+  width: 150px;
+
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 21px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.info-block.block-2 {
+  flex-direction: row-reverse;
 }
 
 .offer-block {
