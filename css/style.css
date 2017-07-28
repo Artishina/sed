@@ -169,10 +169,6 @@ body {
   margin-top: 1px;
 }
 
-.block2 {
-  display: flex;
-}
-
 .block-3 {
   background-color: #eeeeee;
 }
@@ -214,9 +210,7 @@ body {
 }
 
 .info-block-inside {
-   
-
-  background-color: #81b3d2;
+   background-color: #81b3d2;
 }
 
 .info-block-inside p {
@@ -341,6 +335,8 @@ body {
 
 .block-2-title {
   width: 300px;
+  padding-top: 56px;
+  padding-left: 450px;
 
   font-size: 30px;
   font-weight: 700;
@@ -348,12 +344,13 @@ body {
 }
 
 .block-2-info {
-  width: 430px;
+  padding-top: 29px;
+  padding-bottom: 44px;
 }
 
 .feedback-btn {
   display: block;
-  margin-left: 312px;
+  margin-left: 316px;
 
   white-space: nowrap;
 }
@@ -365,6 +362,26 @@ body {
 .links {
   display: flex;
 }
+
+.btn {
+  font-family: "PT Sans", "Tahoma", sans-serif;  
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #ffffff;
+  text-transform: uppercase;  
+  text-decoration: none;
+
+  background-color: #766357;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.feedback-btn {
+  padding: 30px 140px;
+}
+
 
 /* setka catalog*/
 
