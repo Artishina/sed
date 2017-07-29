@@ -91,6 +91,18 @@ body {
   text-decoration: none;
 }
 
+.main-header-navigation a:hover {
+  color: #81b3d2;
+}
+
+.main-header-navigation a:active {
+  color: #bdbbbc;
+}
+
+.main-header-navigation-cat .active {
+  color: #766357;
+}
+
 .main-header-navigation-cat {
   margin: 0;
   padding: 0;
@@ -313,33 +325,33 @@ body {
   width: 75px;
   height: 72px;
 
-  top: 59px;
+  top: 60px;
   left: 162px;
 
   background:  url("../img/sprite.png") no-repeat;
-  background-position: -10px -487px;
+  background-position: -20px -556px;
 }
 
 .offer-block-item:nth-child(2)::before {
   width: 74px;
   height: 70px;
 
-  top: 60px;
+  top: 61px;
   left: 163px;
 
   background:  url("../img/sprite.png") no-repeat;
-  background-position: -10px -301px;
+  background-position: -20px -370px;
 }
 
 .offer-block-item:nth-child(3)::before {
   width: 64px;
   height: 76px;
 
-  top: 55px;
+  top: 56px;
   left: 168px;
 
   background:  url("../img/sprite.png") no-repeat;
-  background-position: -10px -391px;
+  background-position: -20px -460px;
 }
 
 .block-2-title {
@@ -370,6 +382,144 @@ body {
 
 .links {
   display: flex;
+}
+
+.links div {
+  width: 400px;  
+}
+
+.link1 {
+  margin-top: 38px;
+
+  margin-bottom: 50px;
+}
+
+.link1 a {
+  padding-left: 132px;
+
+  font-family: "PT Sans", "Tahoma", sans-serif;  
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;  
+  text-decoration: none;
+}
+
+.footer-btn {
+  position: relative;
+  margin-right: 2px;  
+  display: inline-block;
+  vertical-align: top;
+  content: "";
+  font-size: 0;
+  width: 46px;
+  height: 48px;
+
+  background-color: #81b3d2;
+}
+
+.footer-btn:hover {
+  background-color: #669ec0;
+}
+
+.footer-btn:active {
+  background-color: #5496bd;
+}
+
+.footer-btn.tw::before {
+  position: absolute;
+  width: 17px;
+  height: 15px;
+  
+  content: "";
+  top: 17px;
+  left: 15px;
+  background:transparent url("../img/sprite.png") no-repeat;
+  background-position: -20px -985px;
+}
+
+.footer-btn.tw:active::before {
+  opacity: 0.3;    
+}
+
+.footer-btn.fb:active::before {
+  opacity: 0.3;    
+}
+
+.footer-btn.yb:active::before {
+  opacity: 0.3;    
+}
+
+.footer-btn.fb::before {
+  position: absolute;
+  width: 10px;
+  height: 19px;
+  
+  content: "";
+  top: 13px;
+  left: 18px;
+  background:transparent url("../img/sprite.png") no-repeat;
+  background-position: -20px -331px;
+}
+
+.footer-btn.yb::before {
+  position: absolute;
+  width: 20px;
+  height: 16px;
+  
+  content: "";
+  top: 16px;
+  left: 13px;
+  background:transparent url("../img/sprite.png") no-repeat;
+  background-position: -20px -1020px;
+}
+
+.link2 {
+  margin-top: 28px;
+  padding-left: 187px;
+}
+
+.link3 {
+  position: relative;
+  padding-top: 38px;
+
+
+}
+
+.link3 a {
+  padding-left: 40px;
+    
+  font-family: "PT Sans", "Tahoma", sans-serif;  
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;  
+  text-decoration: none;
+}
+
+.link3::after {
+  position: absolute;
+  width: 113px;
+  height: 39px;
+
+  content: "";
+  top: 33px;
+  left: 122px;
+  background:transparent url("../img/sprite.png") no-repeat;
+  background-position: -20px -648px;
+
+  cursor: pointer;
+}
+
+.link3:hover::after {
+  background-position: -20px -707px;
+}
+
+.link3:active::after {
+  background:transparent url("../img/sprite.png") no-repeat;
+  background-position: -10px -10px;
 }
 
 .btn {
