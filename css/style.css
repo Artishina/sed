@@ -370,14 +370,291 @@ body {
 }
 
 .feedback-btn {
+  position: relative;
   display: block;
   margin-left: 316px;
+  padding: 30px 139px;
+  padding-right: 140px;
 
   white-space: nowrap;
 }
 
 .feedback {
-  display: none;
+  position: absolute;
+  width: 568px;
+
+
+  top: 2169px;
+  left: 316px;
+
+  background-color: #ffffff;
+  box-shadow: 10px 0px 30px -20px #575757,
+   -10px 15px 30px -20px #575757;
+  border: none;
+}
+
+.feedback label, 
+.feedback input {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #333333;
+}
+
+.feedback input {
+  position: relative;
+  background-color: #f2f2f2;
+  border: solid 2px #f2f2f2;
+  outline: none;
+}
+
+.feedback input:hover {
+  background-color: #ebebeb;
+  border: solid 2px #ebebeb;
+}
+
+.feedback input:active {
+  background-color: #ffffff;
+  border: solid 2px #e5e5e5;
+}
+
+.feedback .calendar,
+.feedback .calendar2 {
+  position: absolute;
+  width: 21px;
+  height: 22px;
+
+  border: none;
+  content: "";
+  font-size: 0;
+  top: 63px;
+  left: 483px;
+
+  cursor: pointer;
+  outline: none;
+  background-color: #f2f2f2;
+    background:  url("../img/sprite.png") no-repeat;
+    background-position: -20px -79px;
+    opacity: 0.3;
+}
+
+.feedback .calendar2 {
+  top: 130px;
+}
+
+.feedback .calendar:hover,
+.feedback .calendar2:hover {
+  opacity: 1;
+}
+
+.feedback .calendar:active,
+.feedback .calendar2:active  {
+  background-position: -20px -121px;
+  opacity: 1;
+}
+
+
+.feedback .con,
+.feedback .con2 {
+  position: absolute;
+  width: 12px;
+  height: 3px;
+
+  border: none;
+  content: "";
+  font-size: 0;
+  top: 208px;
+  left: 180px;
+
+
+  cursor: pointer;
+  outline: none;
+  background-color: #f2f2f2;
+  background:  url("../img/sprite.png") no-repeat;
+  background-position: -20px -789px;
+  opacity: 0.4;
+  z-index: 10;
+}
+
+.feedback .con2 {
+  left: 413px;
+}
+
+.feedback .con:hover,
+.feedback .con2:hover {
+  opacity: 1;
+}
+
+.feedback .con:active,
+.feedback .con2:active  {
+  background-position: -20px -766px;
+  opacity: 1;
+}
+
+.feedback .plus,
+.feedback .plus2 {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+
+  border: none;
+  content: "";
+  font-size: 0;
+  top: 204px;
+  left: 256px;
+
+
+  cursor: pointer;
+  outline: none;
+  background-color: #f2f2f2;
+  background:  url("../img/sprite.png") no-repeat;
+  background-position: -20px -812px;
+  opacity: 0.4;
+  z-index: 10;
+}
+
+.feedback .plus2 {
+  left: 489px;
+}
+
+.feedback .plus:hover,
+.feedback .plus2:hover {
+  opacity: 1;
+}
+
+.feedback .plus:active,
+.feedback .plus2:active {
+  background-position: -20px -843px;
+  opacity: 1;
+}
+
+
+.find {
+  padding-top: 50px;
+  padding-bottom: 46px;
+  padding-left: 43px;
+}
+
+.find button {    
+  padding: 16px 195px;
+  padding-left: 196px;
+}
+
+.find button:hover {
+  background-color: #669ec0;
+}
+
+.find button:active {
+  color: #88b6d1;
+
+  background-color: #5496bd;
+}
+
+.feedback-block-date1 {
+  padding-top: 55px;
+  padding-left: 54px;
+}
+
+.feedback-block-date2 {
+  padding-top: 20px;
+  padding-left: 54px;
+}
+
+.feedback-block-date1 input {
+  margin-left: 19px;
+  padding-top: 4px;
+  padding-right: 176px;
+  padding-bottom: 4px;
+  padding-left: 11px;
+} 
+
+.feedback-block-date2 input {
+  margin-left: 17px;
+  padding-top: 4px;
+  padding-right: 177px;
+  padding-bottom: 4px;
+  padding-left: 9px;
+}
+
+.adults input {
+    width: 59px;
+    margin-left: 38px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  padding-left: 51px;
+}
+
+.adults {
+  padding-left: 54px;
+}
+
+.kids input {
+     width: 59px;
+    margin-left: 23px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  padding-left: 51px; 
+}
+
+.kids {
+  padding-left: 53px;
+}
+
+.feedback-block-people {
+  display: flex;
+  padding-top: 21px;
+}
+
+.feedback-block-people div {
+  
+}
+
+.feedback fieldset {
+  border: none;
+}
+
+.find button {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+::-webkit-input-placeholder {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+::-moz-placeholder {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #333333;
+}
+
+:-moz-placeholder {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #333333;
+}
+
+:-ms-input-placeholder {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #333333;
 }
 
 .links {
@@ -537,9 +814,6 @@ body {
   cursor: pointer;
 }
 
-.feedback-btn {
-  padding: 30px 140px;
-}
 
 
 /* setka catalog*/

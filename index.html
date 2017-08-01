@@ -85,29 +85,34 @@
       <button type="button" class="feedback-btn btn" href="#">Поиск гостиницы в седоне</button>
       <form class="feedback">
       	<fieldset class="feedback-block-date1">
-      	  <label for="date-in">Дата заезда</label>
+      	  <label for="date-in">Дата заезда:</label>
       	  <input id="date-in" type="text" name="date-in" placeholder="24 апреля 2017">
-      	  <button type="button">Календарь</button>
+      	  <button class="calendar" type="button">Календарь</button>
       	</fieldset>
       	<fieldset class="feedback-block-date2">
-      	  <label for="date-out">Дата выезда</label>
+      	  <label for="date-out">Дата выезда:</label>
       	  <input id="date-out" type="text" name="date-out" placeholder="4 июля 2017">
-      	  <button type="button">Календарь</button>
+      	  <button class="calendar2" type="button">Календарь</button>
       	</fieldset>
-      	<fieldset class="feedback-block-people">
+      	<div class="feedback-block-people">
       	  <div class="adults">
             <label for="number-adult">Взрослые:</label>
-            <button type="button" class="icon-btn minus">Минус</button>
+            <button class="con" type="button" class="icon-btn minus">Минус</button>
             <input type="text" id="number-adult" name="adult" placeholder="2">
-            <button type="button" class="icon-btn plus">Плюс</button>
+            <button class="plus" type="button" class="icon-btn plus">Плюс</button>
             </div>
           <div class="kids">
             <label for="number-kids">Дети:</label>
-            <button type="button" class="icon-btn minus">Минус</button>
+            <button class="con2" type="button" class="icon-btn minus">Минус</button>
             <input type="text" id="number-kids" name="kids" placeholder="0">
-            <button type="button" class="icon-btn plus">Плюс</button>
-          </div>	
-      	</fieldset>	
+            <button class="plus2" type="button" class="icon-btn plus">Плюс</button>
+          </div>
+      	</div>
+      	<fieldset>	
+          <div class="find">
+            <button class="btn" type="button">Найти</button>	
+          </div>
+        </fieldset>	
       </form>
     </div>
     <div class="map-block">
