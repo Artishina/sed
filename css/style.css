@@ -372,6 +372,7 @@ body {
 .feedback-btn {
   position: relative;
   display: block;
+  margin-right: 316px;
   margin-left: 316px;
   padding: 30px 139px;
   padding-right: 140px;
@@ -380,7 +381,9 @@ body {
 }
 
 .feedback {
+  display: none;
   position: absolute;
+  transform-origin: top center;
   width: 568px;
 
 
@@ -391,6 +394,15 @@ body {
   box-shadow: 10px 0px 30px -20px #575757,
    -10px 15px 30px -20px #575757;
   border: none;
+}
+
+.feedback-show {
+  display: block;
+     
+   -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-animation-duration: 0.6s;
+  animation-duration: 0.16s;
 }
 
 .feedback label, 
@@ -567,6 +579,8 @@ body {
   padding-right: 176px;
   padding-bottom: 4px;
   padding-left: 11px;
+
+  text-transform: uppercase;
 } 
 
 .feedback-block-date2 input {
@@ -575,12 +589,15 @@ body {
   padding-right: 177px;
   padding-bottom: 4px;
   padding-left: 9px;
+  
+  text-transform: uppercase;
 }
 
 .adults input {
-    width: 59px;
+    width: 18px;
     margin-left: 38px;
     padding-top: 4px;
+    padding-right: 41px;
     padding-bottom: 4px;
   padding-left: 51px;
 }
@@ -590,9 +607,10 @@ body {
 }
 
 .kids input {
-     width: 59px;
+     width: 18px;
     margin-left: 23px;
     padding-top: 4px;
+    padding-right: 41px;
     padding-bottom: 4px;
   padding-left: 51px; 
 }
