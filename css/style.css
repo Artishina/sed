@@ -844,41 +844,193 @@ body {
   display: flex;
 }
 
-.catalog-block {
+.catalog-block-item {
   display: flex;
+}
+
+.filter-block fieldset {
+  border: none;
+}
+
+.filter-block {
+  font-family: "PT Sans", "Tahoma", sans-serif;  
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  color: #ffffff;
+  text-transform: uppercase;  
+  text-decoration: none;
+
+  background: transparent url("../img/filter-background.jpg") no-repeat; 
+}
+
+.filter-block ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+input[type="checkbox"] {
+  display: none;    
+}
+
+.flabel {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+  padding-left: 35px;  
+
+  cursor: pointer;
+}
+
+.flabel::before {
+  position: absolute;
+  display: block;
+  
+
+  content: "";
+  top: 0px;
+  left: 0;
+
+  background-image: url(../img/sprite.png);
+ 
+  width: 22px;
+    height: 22px;
+    background-position: -20px -247px;
+}
+
+input[type="checkbox"]:checked + .flabel::before {
+  position: absolute;
+
+
+  content: "";
+  left: 0px;
+  top: 0px;
+  
+  background-image: url(../img/sprite.png);
+   width: 26px;
+    height: 22px;
+    background-position: -20px -289px;
+}
+
+input[type="checkbox"]:disabled  + .flabel {
+  color: #6a6a6a;
+
+  cursor: default;
+
+}
+
+input[type="checkbox"]:disabled  + .flabel::before {
+   
+     background-image: url(../img/sprite.png);
+  background-position: -20px -206px;
+}
+
+input[type="checkbox"]:disabled:checked + .flabel::before {
+   
+     background-image: url(../img/sprite.png);
+  background-position: -20px -163px;
+}
+
+.filter-block legend {
+  font-family: "PT Sans", "Tahoma", sans-serif;  
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #ffffff;
+  text-transform: uppercase;  
+  text-decoration: none;  
+}
+
+.price-control {
+    position: relative;
+    margin-left: 12px;
+    height: 33px;
+    margin-bottom: 19px;
+    font-size: 0;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+}
+
+
+.price-control::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 22px;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
 }
 
 
 
+.price-control label {
+    display: inline-block;
+    padding-top: 5px;
+    text-align: left;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 21px;
+    cursor: pointer;
+}
 
+.price-control input {
+    width: 50px;
+    margin: 0;
+    color: inherit;
+    font: inherit;
+    background: none;
+    border: none;
+}
 
+.price-control .min-price,
+.price-control .max-price {
+    width: 83px;
+    padding-left: 65px;
+}
 
+.range-control {
+    position: relative;
+    margin-left: 12px;
+    margin-bottom: 32px;
+}
 
+.range-control .scale {
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
 
+.range-control .bar {
+    width: 80%;
+    height: 2px;
+    background: #ffffff;
+}
 
+.toggle {
+    position: absolute;
+    top: -9px;
+    width: 4px;
+    height: 4px;
+    background-color: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+}
 
+.toggle:hover {
+    background-color: #1c4f80;
+}
 
+.toggle-min {
+    left: 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.toggle-max {
+    left: 80%;
+}
 
 
 
